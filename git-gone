@@ -6,7 +6,7 @@ ORIGIN=$(git remote get-url origin)
 cd $REPO_DIR
 rm -rf .git
 rm -rf $REPO_DIR/*
-git init
+git init -q
 git add .
 git commit -m 'Initial commit'
 git remote add origin $ORIGIN
