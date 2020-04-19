@@ -8,6 +8,6 @@ rm -rf .git
 rm -rf $REPO_DIR/*
 git init -q
 git add .
-git commit -m 'Initial commit'
+git commit --allow-empty -m 'Initial commit' -q
 git remote add origin $ORIGIN
 git push -fu origin master
